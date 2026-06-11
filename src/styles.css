@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  color: #f4f4f4;
+  background: #111111;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  --red: #ff2a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.92);
+  text-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+
+.grid-paper {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 260ms ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
