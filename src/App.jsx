@@ -305,7 +305,7 @@ function About() {
                 <img src="/myphoto.png" alt="Ayushi" className="h-full w-full object-cover" />
               </div>
               <p className="mt-6 font-mono text-xs uppercase tracking-[0.24em] text-white/50">Developer ID</p>
-              <h3 className="mt-2 text-3xl font-black tracking-[-0.05em] text-white">Ayushi A.</h3>
+              <h3 className="mt-2 text-3xl font-black tracking-[-0.05em] text-white">Ayushi Awasthi</h3>
               <p className="mt-1 text-sm text-white/54">Full Stack & AI-ML Engineer</p>
             </div>
           </motion.div>
@@ -763,16 +763,7 @@ function Footer() {
             <p className="mt-5">{currentYear}</p>
           </div>
         </motion.div>
-
-        <motion.h2
-          className="py-12 text-center text-[clamp(5rem,20vw,18rem)] font-black lowercase leading-none tracking-[-0.09em] text-[#f4f4f4] transition hover:text-white hover:[text-shadow:0_0_44px_rgba(255,255,255,0.18)]"
-          initial={{ y: 110, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.35 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        >
-          Ayushi
-        </motion.h2>
+        
 
         <div className="grid gap-8 border-t border-white/10 pt-9 text-sm text-white/60 md:grid-cols-3">
           <div>
